@@ -2,16 +2,7 @@
 require 'header.php';
 ?>
 <!--  Header End -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prescription Data Page</title>
-    <!-- Include Bootstrap CSS for styling -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-</head>
-<body>
+
 
 <div class="container-fluid">
     <div class="card">
@@ -78,7 +69,7 @@ require 'header.php';
                 <p>Prescription details for <span id="patientNameContent"></span> will be displayed here.</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Given</button>
             </div>
         </div>
     </div>
@@ -101,5 +92,6 @@ require 'header.php';
     }
 </script>
 
-</body>
-</html>
+<?php
+require 'footer.php';
+?>
