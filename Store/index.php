@@ -2,16 +2,104 @@
 require 'header.php';
 ?>
 <!--  Header End -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription Data Page</title>
+    <!-- Include Bootstrap CSS for styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
 <div class="container-fluid">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title fw-semibold mb-4">Sample Page</h5>
-      <p class="mb-0">This is a sample page </p>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title fw-semibold mb-4">Prescription Data</h5>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">NAME</th>
+                        <th scope="col">ADDRESS</th>
+                        <th scope="col">PRESCRIPTION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">XXXXXXXXXX</th>
+                        <td>Akshansh</td>
+                        <td>Mathura</td>
+                        <td><button style="width:75px;height:35px" onclick="openPrescriptionModal('Akshansh')" class="btn btn-primary">Open</button></td>  
+                    </tr>
+                    <tr>
+                        <th scope="row">XXXXXXXXXX</th>
+                        <td>Astha Rathore</td>
+                        <td>Mathura</td>
+                        <td><button style="width:75px;height:35px" onclick="openPrescriptionModal('Astha Rathore')" class="btn btn-primary">Open</button></td>  
+                    </tr>
+                    <tr>
+                        <th scope="row">XXXXXXXXXX</th>
+                        <td>Akash Sharma</td>
+                        <td>Mathura</td>
+                        <td><button style="width:75px;height:35px" onclick="openPrescriptionModal('Akash Sharma')" class="btn btn-primary">Open</button></td>  
+                    </tr>
+                    <tr>
+                        <th scope="row">XXXXXXXXXX</th>
+                        <td>Abhay gupta</td>
+                        <td>Mathura</td>
+                        <td><button style="width:75px;height:35px" onclick="openPrescriptionModal('Abhay gupta')" class="btn btn-primary">Open</button></td>  
+                    </tr>
+                    <tr>
+                        <th scope="row">XXXXXXXXXX</th>
+                        <td>Madhur Krishna</td>
+                        <td>Mathura</td>
+                        <td><button style="width:75px;height:35px" onclick="openPrescriptionModal('Madhur Krishna')" class="btn btn-primary">Open</button></td>  
+                    </tr>             
+                </tbody>
+            </table>
+        </div>
     </div>
-  </div>
 </div>
+
+<!-- Prescription Modal -->
+<div class="modal" id="prescriptionModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Prescription for <span id="patientName"></span></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Content of the prescription goes here -->
+                <p>Prescription details for <span id="patientNameContent"></span> will be displayed here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
 </div>
-</div>
-<?php
-require 'footer.php';
-?>
+
+<!-- Include Bootstrap JS and jQuery for modal functionality -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script>
+    // Function to open the prescription modal
+    function openPrescriptionModal(patientName) {
+        // Set the patient name in the modal
+        document.getElementById('patientName').innerHTML = patientName;
+        document.getElementById('patientNameContent').innerHTML = patientName;
+
+        // Show the modal
+        $('#prescriptionModal').modal('show');
+    }
+</script>
+
+</body>
+</html>

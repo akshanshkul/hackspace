@@ -41,7 +41,7 @@
                                 <span>
                                     <i class="ti ti-article"></i>
                                 </span>
-                                <span class="hide-menu">New Patient</span>
+                                <span class="hide-menu">Prescription</span>
                             </a>
                         </li>
 
