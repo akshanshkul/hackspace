@@ -38,22 +38,14 @@
                             <span class="hide-menu">Dashboard</span>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="index.php" aria-expanded="false">
+                            <a class="sidebar-link" href="index" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-article"></i>
                                 </span>
-                                <span class="hide-menu">New Patient</span>
+                                <span class="hide-menu">Create Appointment</span>
                             </a>
                         </li>
 
-                        <li class="sidebar-item">
-                            <a class="sidebar-link" href="teams.php" aria-expanded="false">
-                                <span>
-                                    <i class="ti ti-article"></i>
-                                </span>
-                                <span class="hide-menu">Departments</span>
-                            </a>
-                        </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link" href="profile.php" aria-expanded="false">
                                 <span>
@@ -75,10 +67,10 @@
             <!--  Header Start -->
             <header class="app-header">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                   
+
                     <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
                         <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
-                            
+
                             <li class="nav-item dropdown">
                                 <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2"
                                     data-bs-toggle="dropdown" aria-expanded="false">
