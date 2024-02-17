@@ -54,11 +54,11 @@ require 'header.php';
                     <form>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Patient:</label>
-                            <input type="text" class="form-control" id="recipient-name">
+                         <p>madhur</p>
                         </div>
                         <div class="mb-3">
                             <label for="message-text" class="col-form-label">Prescription:</label>
-                            <textarea class="form-control" id="message-text"></textarea>
+                           <p>NA</p>
                         </div>
                     </form>
                 </div>
