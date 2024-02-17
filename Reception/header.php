@@ -1,5 +1,24 @@
 <?php
-
+include '../vendor/autoload.php';
+include '../config/define.php';
+use App\classes\Session;
+Session::init();
+$loginStatus = Session::get('adminLoginSuccess');
+$adminId = Session::get('adminId');
+$adminRole = Session::get('adminRole');
+if (!$loginStatus) {
+    header("Location: ../index.php");
+    exit;
+} else {
+    $adminDataArray = $getAdminDataObj->getAdminById($adminId);
+    $adminData = mysqli_fetch_assoc($adminDataArray);
+    $profilePicture = $adminData['admin_profile_picture'];
+    if (!empty($profilePicture)) {
+        $imageUrl = "assets/images/adminProfile/$profilePicture";
+    } else {
+        $imageUrl = "assets/images/adminProfile/temp/user-1.jpg";
+    }
+}
 ?>
 
 <!doctype html>
