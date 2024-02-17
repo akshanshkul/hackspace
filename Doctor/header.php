@@ -47,7 +47,7 @@
                         </li>
 
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="department.php" aria-expanded="false">
+                            <a class="sidebar-link" href="reports.php" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-article"></i>
                                 </span>
