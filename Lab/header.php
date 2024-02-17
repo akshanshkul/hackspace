@@ -42,16 +42,7 @@
                                 <span>
                                     <i class="ti ti-article"></i>
                                 </span>
-                                <span class="hide-menu">New Patient</span>
-                            </a>
-                        </li>
-
-                        <li class="sidebar-item">
-                            <a class="sidebar-link" href="teams.php" aria-expanded="false">
-                                <span>
-                                    <i class="ti ti-article"></i>
-                                </span>
-                                <span class="hide-menu">Departments</span>
+                                <span a class="hide-menu" href="">Reports</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
