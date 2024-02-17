@@ -69,7 +69,7 @@ require 'header.php';
                 <p>Prescription details for <span id="patientNameContent"></span> will be displayed here.</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Given</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
