@@ -42,20 +42,20 @@
                                 <span>
                                     <i class="ti ti-article"></i>
                                 </span>
-                                <span class="hide-menu">New Patient</span>
+                                <span class="hide-menu">Appointments</span>
                             </a>
                         </li>
 
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="teams.php" aria-expanded="false">
+                            <a class="sidebar-link" href="department.php" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-article"></i>
                                 </span>
-                                <span class="hide-menu">Departments</span>
+                                <span class="hide-menu">Reports</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="profile.php" aria-expanded="false">
+                            <a class="sidebar-link" href="report.php" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-user-plus"></i>
                                 </span>
