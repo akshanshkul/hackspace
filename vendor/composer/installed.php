@@ -3,7 +3,7 @@
         'name' => 'techcov/medipure',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'e648dcb0f0aea4b6762925189785047d9c5292ef',
+        'reference' => 'fe3ca57af838993484c729b637d0f642a5a8a900',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -112,7 +112,7 @@
         'techcov/medipure' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'e648dcb0f0aea4b6762925189785047d9c5292ef',
+            'reference' => 'fe3ca57af838993484c729b637d0f642a5a8a900',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
